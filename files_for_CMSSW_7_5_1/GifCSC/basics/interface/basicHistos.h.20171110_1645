@@ -1,0 +1,22 @@
+#ifndef basicHistos_h
+#define basicHistos_h
+
+#include <vector>
+#include <utility>
+
+#include "TDirectory.h"
+#include "TH1F.h"
+
+#include "GifCSC/basics/interface/basicHistosNaming.h"
+
+class basicHistos{
+public:
+	basicHistos(TDirectory * foutdir);
+	~basicHistos();
+private:
+	TDirectory * outdir;
+	std::vector<std::pair<TH1F* , basicHistosNaming*>> histosWithDescritions;
+	virtual bool book();
+	bool write();
+}
+#endif

@@ -1,0 +1,7 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="GifCSC/Anode"/>
+<use name="GifCSC/Cathode"/>
+<use name="GifCSC/LCT"/>
+<flags EDM_PLUGIN="1"/>
